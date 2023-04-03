@@ -8,21 +8,109 @@
   padding: 16px;
 }
 
-.example code {
-  font-family: monospace;
-  font-size: 16px;
-  font-weight: 700;
-  background-color: #ff6b0a;
-  color: #fff;
-  padding: 2px 6px;
-  border-radius: 2px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.example .background {
-  height: 240px;
-  // ❗️❗️❗️ The path to images from a SASS file
-  // is always the same as from the css folder.
-  background-image: url('../images/logo.png');
-  background-size: cover;
-  background-position: center;
+.container-form{
+  position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color: #3457b4;
+    height: 60px;
+    box-shadow: 2px 2px 4px 1px rgba(66, 68, 90, 1);
+}
+
+input{
+  background-color: white;
+    border: none;
+    width: 250px;
+    height: 32px;
+    padding-left: 10px;
+}
+.form-button{
+  position: absolute;
+  transform: translateX(-100%);
+  height: 32px;
+  width: 32px;
+  background-color: #f1eff1;
+  border: none;
+  border-radius: 0px 5px 5px 0px;
+  padding: 6px 1px;
+}
+.icon{
+  fill: #181717;
+    background-color: #f1eff1;
+    width: 30px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding: 65px 15px;
+}
+
+.photo-card {
+  width: 330px;
+  height: 320px;
+  padding: 1px solid white;
+  box-shadow: 2px 2px 4px -1px rgba(66, 68, 90, 1);
+}
+
+.photo-card img {
+  display: block;
+  width: 330px;
+  height: 250px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.info {
+  display: flex;
+  padding: 15px 10px 5px 10px;
+  justify-content: space-between;
+  align-content: center;
+  color: #161616;
+  text-align: center;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.load-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  height: 50px;
+  width: 150px;
+  background-color: #3457b4;
+  cursor: pointer;
+  border-radius: 10px;
+
+}
+
+.hidden {
+  display: none;
 }
